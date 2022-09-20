@@ -42,7 +42,7 @@ class CategoriesService {
         if (!category) {
           throw boom.notFound('Categorie notFound');
         }
-        if (category.isBLock = true) {
+        if (category.isBLock ) {
           throw boom.conflict('Categoria block');
         }
         return category;
